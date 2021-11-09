@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "structure.module.scss",
+        "base.module.scss"
+    ],
+    "names": [],
+    "file": "structure.module.css"
+}

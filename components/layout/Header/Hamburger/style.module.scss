@@ -1,0 +1,27 @@
+@import '../../../../css/base.module';
+
+.hamburger {
+    overflow: visible;
+    width: base();
+    height: base();
+}
+
+.line1 {
+    opacity: 0;
+    transform: translate(0, base(-0.5));
+}
+
+.line2 {
+    opacity: 1;
+    transform: rotate(45deg);
+}
+
+.line3 {
+    opacity: 1;
+    transform: rotate(-45deg);
+}
+
+.line4 {
+    opacity: 0;
+    transform: translate(0, base(0.5));
+}

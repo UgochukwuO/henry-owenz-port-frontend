@@ -1,34 +1,38 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import styles2 from '../styles/blog.module.css'
+import styles from '../css/Home.module.css'
+import styles2 from '../css/blog.module.css'
 import { gql } from "@apollo/client";
 import client from "../apollo-client";
+import GridContainer from '../components/layout/GridContainer';
 
-export default function Home({ getBlogs }) {
+function Home({ getBlogs }) {
 
 
   return (
   <>
-  <h1> Henry Owenz Portfolio</h1>
-    <div className={styles.grid}>
-      {getBlogs.map((blog) => (
-        <div key={blog._id} className={styles.card}>
-          <h1>
-            {blog.Title} 
-          </h1>
-          <p>
-            {blog.Content}
-          </p>
-          <div style={{paddingTop: '15px', color: 'grey'}}>
-            Author: {blog.Author}
+    <GridContainer >
+    <h1 style={{textAlign: "center"}}> Henry Owenz </h1>
+      <div className={styles.grid}>
+        {getBlogs.map((blog) => (
+          <div key={blog.Date_Created} className={styles.card}>
+            <h1>
+              {blog.Title} 
+            </h1>
+            <p>
+              {blog.Content}
+            </p>
+            <div style={{paddingTop: '15px', color: 'grey'}}>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+  </GridContainer>
 </>
   )
 }
+
+export default Home;
 
 export async function getServerSideProps() {
     //const { data } = await client.query()

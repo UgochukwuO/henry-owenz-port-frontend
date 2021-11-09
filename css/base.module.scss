@@ -1,0 +1,7 @@
+$htmlFontSize: 18;
+$baselinePX: 20;
+
+
+@function base($multiplier: 1) {
+    @return (($baselinePX / $htmlFontSize) * $multiplier) + unquote("rem");
+}

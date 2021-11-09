@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,cAAc,CAAC;EACX,SAAS,ECDQ,KAAK;EDEtB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;CACrB",
+    "sources": [
+        "style.module.scss",
+        "../../../css/structure.module.scss",
+        "../../../css/base.module.scss"
+    ],
+    "names": [],
+    "file": "style.module.css"
+}

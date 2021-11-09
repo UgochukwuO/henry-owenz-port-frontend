@@ -3,7 +3,7 @@
     "mappings": "AAEA,AAAA,KAAK,CAAC;EACF,gBAAgB,ECHR,OAAO;CDIlB",
     "sources": [
         "blog.module.scss",
-        "_config.scss"
+        "_config.module.scss"
     ],
     "names": [],
     "file": "blog.module.css"

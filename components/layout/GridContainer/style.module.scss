@@ -1,0 +1,7 @@
+@import '../../../css/structure.module';
+
+.gridContainer {
+    max-width: $gridContainerWidth;
+    margin-left: auto;
+    margin-right: auto;
+}
